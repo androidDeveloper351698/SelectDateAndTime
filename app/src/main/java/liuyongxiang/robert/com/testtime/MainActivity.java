@@ -101,7 +101,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 try {
                     Date begin = dateFormat.parse(currentTime);
                     Date end = dateFormat.parse(beginTime);
-                    tv_house_time.setText(DateUtils.currentTimeDeatil(begin));
+                    tv_house_time.setText(DateUtils.formateStringH(beginTime,DateUtils.yyyyMMddHHmm));
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
