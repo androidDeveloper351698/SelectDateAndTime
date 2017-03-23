@@ -67,7 +67,11 @@ public class NumericWheelAdapter implements WheelAdapter {
 	public String getItem(int index) {
 		if (index >= 0 && index < getItemsCount()) {
 			int value = minValue + index;
-			return format != null ? String.format(format, value) : Integer.toString(value);
+			String data = String.valueOf(value);
+			if (value<10){
+				data="0"+value;
+			}
+			return format != null ? String.format(format, value) : data;
 		}
 		return null;
 	}

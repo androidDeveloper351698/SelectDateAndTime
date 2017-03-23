@@ -19,10 +19,6 @@
 
 package liuyongxiang.robert.com.testtime.wheelview;
 
-import java.util.LinkedList;
-import java.util.List;
-
-
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -36,13 +32,15 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.FloatMath;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
+
+import java.util.LinkedList;
+import java.util.List;
 
 import liuyongxiang.robert.com.testtime.R;
 

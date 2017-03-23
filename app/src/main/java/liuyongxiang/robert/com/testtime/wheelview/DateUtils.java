@@ -1,14 +1,13 @@
 package liuyongxiang.robert.com.testtime.wheelview;
 
+import android.annotation.SuppressLint;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-
-
-import android.annotation.SuppressLint;
 
 import liuyongxiang.robert.com.testtime.bean.CustomDate;
 
@@ -283,11 +282,11 @@ public class DateUtils {
     public static int getMinute() {  
         return Calendar.getInstance().get(Calendar.MINUTE);  
     }  
-    public static CustomDate getNextSunday() {  
+    public static CustomDate getNextSunday() {
           
         Calendar c = Calendar.getInstance();  
         c.add(Calendar.DATE, 7 - getWeekDay()+1);  
-        CustomDate date = new CustomDate(c.get(Calendar.YEAR),  
+        CustomDate date = new CustomDate(c.get(Calendar.YEAR),
                 c.get(Calendar.MONTH)+1, c.get(Calendar.DAY_OF_MONTH));  
         return date;  
     }  
@@ -329,15 +328,15 @@ public class DateUtils {
         }  
         return date;  
     }  
-    public static boolean isToday(CustomDate date){  
-        return(date.year == DateUtils.getYear() &&  
-                date.month == DateUtils.getMonth()   
-                && date.day == DateUtils.getCurrentMonthDay());  
+    public static boolean isToday(CustomDate date){
+        return(date.year == DateUtils.getYear() &&
+                date.month == DateUtils.getMonth()
+                && date.day == DateUtils.getCurrentMonthDay());
     }  
       
     public static boolean isCurrentMonth(CustomDate date){
-        return(date.year == DateUtils.getYear() &&  
-                date.month == DateUtils.getMonth());  
+        return(date.year == DateUtils.getYear() &&
+                date.month == DateUtils.getMonth());
     }  
 //    获取做给定年月的最后一天
     
