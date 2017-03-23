@@ -1,4 +1,4 @@
-package liuyongxiang.robert.com.testtime;
+package liuyongxiang.robert.com.testtime.activities;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -18,6 +18,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import liuyongxiang.robert.com.testtime.R;
 import liuyongxiang.robert.com.testtime.wheelview.DateUtils;
 import liuyongxiang.robert.com.testtime.wheelview.JudgeDate;
 import liuyongxiang.robert.com.testtime.wheelview.ScreenInfo;
